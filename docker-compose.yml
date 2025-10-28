@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis:7
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  app:
+    env_file:
+      - .env
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+    restart: unless-stopped
