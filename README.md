@@ -23,8 +23,24 @@
 2. Клонирование репозитория
  ```
 git clone [<ссылка-на-репозиторий>](https://github.com/Alex171228/Pz7)
-cd pz7-redis
+cd Pz7
   ```
+3. Открытие порта на сервере
+     ```
+    sudo ufw allow 8081/tcp
+    sudo ufw reload
+     ```
+4. Сборка и запуск контейнеров
+    ```
+    docker compose up -d --build
+     ```
+  Проверка статуса
+      ```
+    docker compose ps
+     ```
+     
+<img width="1791" height="89" alt="изображение" src="https://github.com/user-attachments/assets/2bc9ee2e-35ef-4b8b-bd3b-2ac6c318cabc" /> 
+
 ### Добавление значения в кэш (SET)
 
 <img width="616" height="570" alt="изображение" src="https://github.com/user-attachments/assets/ef48b89d-f2e8-4eb5-a44a-b25756164c75" /> 
