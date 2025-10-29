@@ -15,16 +15,16 @@
 1. Предварительные требования
   Установлен Docker и Docker Compose
   Проверка:
-  ```
-  docker --version
-  docker compose version
-  ```
+    ```
+    docker --version
+    docker compose version
+    ```
 
 2. Клонирование репозитория
- ```
-git clone [<ссылка-на-репозиторий>](https://github.com/Alex171228/Pz7)
-cd Pz7
-  ```
+   ```
+    git clone [<ссылка-на-репозиторий>](https://github.com/Alex171228/Pz7)
+    cd Pz7
+    ```
 3. Открытие порта на сервере
      ```
     sudo ufw allow 8081/tcp
