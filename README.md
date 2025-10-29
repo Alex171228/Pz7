@@ -11,7 +11,21 @@
 
 <img width="337" height="409" alt="изображение" src="https://github.com/user-attachments/assets/4fc02bd3-168c-43c7-9b63-aec5eaef5b25" />
 
+## Запуск проекта
+1. Предварительные требования
+  Установлен Docker и Docker Compose
+  Проверка:
+  ```
+  docker --version
+  docker compose version
+  ```
 
+2. Клонирование репозитория
+ ```
+git clone <ссылка-на-репозиторий>
+cd pz7-redis
+
+  ```
 ### Добавление значения в кэш (SET)
 
 <img width="616" height="570" alt="изображение" src="https://github.com/user-attachments/assets/ef48b89d-f2e8-4eb5-a44a-b25756164c75" /> 
