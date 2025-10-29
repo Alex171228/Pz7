@@ -41,6 +41,8 @@ cd Pz7
      
 <img width="1791" height="89" alt="изображение" src="https://github.com/user-attachments/assets/2bc9ee2e-35ef-4b8b-bd3b-2ac6c318cabc" /> 
 
+## Запросы и результат их выполнения
+для выполнения запросов приложен json для Postman
 ### Добавление значения в кэш (SET)
 
 <img width="616" height="570" alt="изображение" src="https://github.com/user-attachments/assets/ef48b89d-f2e8-4eb5-a44a-b25756164c75" /> 
