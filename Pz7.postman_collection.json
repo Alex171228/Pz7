@@ -1,0 +1,97 @@
+{
+  "info": {
+    "name": "Redis Cache API — 109.237.98.39:8081",
+    "_postman_id": "f3c7f7cb-7e5b-4b74-bf0a-redis-cache-demo",
+    "description": "Коллекция для проверки эндпоинтов /set, /get, /ttl сервера Redis-кэша.\nСервер: http://109.237.98.39:8081",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "SET — сохранить значение (TTL=10s)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/set?key={{key}}&value={{value}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "set"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "{{key}}"
+            },
+            {
+              "key": "value",
+              "value": "{{value}}"
+            }
+          ]
+        },
+        "description": "Сохраняет значение в Redis с TTL=10 секунд."
+      }
+    },
+    {
+      "name": "GET — получить значение по ключу",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/get?key={{key}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "get"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "{{key}}"
+            }
+          ]
+        },
+        "description": "Возвращает значение по ключу из Redis."
+      }
+    },
+    {
+      "name": "TTL — проверить оставшееся время жизни",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/ttl?key={{key}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "ttl"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "{{key}}"
+            }
+          ]
+        },
+        "description": "Возвращает TTL ключа в секундах. -2 — ключ не существует, -1 — без истечения."
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://109.237.98.39:8081"
+    },
+    {
+      "key": "key",
+      "value": "test"
+    },
+    {
+      "key": "value",
+      "value": "hello"
+    }
+  ]
+}
